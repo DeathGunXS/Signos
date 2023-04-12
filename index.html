@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch Case</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <h1>Horoscopo</h1>
+
+    <input type="text" id="signos">
+    <button onclick="escolhaSigno()" id="btn">Selecione o Signo</button>
+    <div id="frase"></div>
+
+    <div id="imagens">
+        <img src="" alt=""
+            id="foto">
+    </div>
+
+    <script>
+        function escolhaSigno() {
+            var texto;
+            var signo = document.querySelector("#signos").value;
+            var foto = document.getElementById("foto")
+
+            switch (signo) {
+                case "aries":
+                    texto = "Quem tem sol em Áries costuma viver no agora; além de possuir um grande prazer em existir, ação e decisão também podem ser algumas de suas marcas. A liderança é uma característica forte no signo, que pode ser usada para o empreendedorismo. "
+                foto.src = "https://cdn-icons-png.flaticon.com/512/47/47303.png?w=360"
+                    break;
+
+                case "touro":
+                    texto="O momento tende a evidenciar um aprimoramento pessoal que ajuda com escolhas sensatas e experiências em sintonia com seus valores."
+                foto.src = "https://cdn-icons-png.flaticon.com/512/47/47287.png"    
+                    break;
+
+                case "gemeos":
+                    texto = "Pode haver aprofundamento de parcerias que compartilham ambições, o que lhe ajuda a somar esforços em prol de um bem comum. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47140.png"
+                    break;
+
+                case "cancer":
+                    texto = "Tente fazer mudanças na rotina que viabilizem práticas voltadas à saúde e ao bem-estar. Os desafios de ordem emocional ficam evidentes. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47279.png"
+                    break;
+
+                case "leão":
+                    texto = "Procure desacelerar o ritmo de vida, favorecendo a introspecção e o usufruto da vida privada. É preciso valorizar seus vínculos. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47085.png"
+                    break;
+
+                case "virgem":
+                    texto = "O acolhimento tende a favorecer vínculos seletos amparados na confiança e na cumplicidade. Busque exercitar suas vocações. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47038.png"
+                    break;
+
+                case "libra":
+                    texto = "O momento pode promover aperfeiçoamento das ideias e do trato humano, favorecendo a gestão do dia a dia e do convívio com seus pares. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47298.png"
+                    break;
+
+                case "escorpião":
+                    texto = "Suas habilidades práticas tendem a ficar em destaque agora. Além disso, você pode ser estimulada a somar esforços com a coletividade. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47250.png"
+                    break;
+
+                case "sagitario":
+                    texto = "Você pode se conectar com as necessidades da vida, o que ajuda a se articular com seus pares para melhorar a qualidade do dia a dia. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47213.png"
+                    break;
+
+                case "capricornio":
+                    texto = "Momento de aperfeiçoamento íntimo que lhe ajuda a reestruturar suas ideias e a se posicionar com segurança perante o entorno. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47156.png"
+                    break;
+
+                case "aquario":
+                    texto = "O céu do dia oportuniza ações colaborativas em atendimento às demandas, embora diante de desafios pessoais seja preciso atuar com discrição. Lazeres culturais ganham corpo com Vênus na casa social.  "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47387.png"
+                    break;
+
+                case "peixes":
+                    texto = "Seu senso de responsabilidade pode melhorar nesta fase. Além disso, você se conecta com suas ambições e valoriza contatos pontuais. "
+                    foto.src = "https://cdn-icons-png.flaticon.com/512/47/47255.png"
+                    break;
+
+                default:
+                    texto = "Insira um Signo"
+                    foto.src = ""
+                    
+            }
+
+            document.querySelector("#frase").innerHTML = texto
+            
+        }
+    </script>
+
+</body>
+
+</html>

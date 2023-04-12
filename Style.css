@@ -1,0 +1,36 @@
+body{
+    background-image: url(https://images5.alphacoders.com/331/331246.jpg);
+    background-size: cover;
+}
+
+
+
+h1{
+    font-family: "bird";
+    font-size: 45px;
+    color: rgb(170, 145, 4);
+    text-shadow: 2px 2px black;
+}
+
+#frase{
+font-family: "bird";
+font-size: 25px;
+color: rgb(206, 176, 7);
+text-shadow: 2px 2px black;
+}
+
+@font-face {
+    font-family: "bird";
+    src: url(bird.ttf) format("opentype"),url(bird.ttf)
+    format("truetype");
+    font-weight: normal;
+    font-style: normal; 
+}
+
+#btn{
+    background-color: black;
+    color: gold;
+    border: 1px solid black;
+    font-family: "bird";
+    font-size: 20px
+}
